@@ -1,0 +1,53 @@
+What is Retrieval-Augmented Generation (RAG)?
+
+Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response. Large Language Models (LLMs) are trained on vast volumes of data and use billions of parameters to generate original output for tasks like answering questions, translating languages, and completing sentences. RAG extends the already powerful capabilities of LLMs to specific domains or an organization's internal knowledge base, all without the need to retrain the model. It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts.
+
+What are the benefits of RAG?
+
+RAG provides several benefits including cost-effective implementation, current information, enhanced user trust, and more developer control.
+
+Cost-effective implementation: Typically, retraining a foundation model to adapt to domain-specific or organizational knowledge is expensive. RAG is a cost-effective approach to introducing new data to the LLM. It makes generative AI technology more broadly accessible and usable.
+
+Current information: Even if original training data sources for an LLM are suitable for your needs, it is challenging to maintain relevancy. RAG allows developers to provide the latest research, statistics, or news to the LLM to generate current and authoritative answers.
+
+Enhanced user trust: RAG allows the LLM to present accurate information with source attribution. The output can include citations and references to the sources. This increases trust and provides a way to verify the information.
+
+More developer control: With RAG, developers can test and improve their chat applications more efficiently. They can control and change the LLM's knowledge sources. They can also adjust access to sensitive information.
+
+How does Retrieval-Augmented Generation work?
+
+RAG has 3 steps: retrieval, augmentation, and generation.
+
+Retrieval: When a user asks a question, the system retrieves relevant information from a knowledge base. This is done by converting the user query into a vector embedding and performing a similarity search in a vector database.
+
+Augmentation: The retrieved relevant chunks are added to the user prompt as context. The prompt is augmented with the phrase like "Use the following context to answer the question".
+
+Generation: The augmented prompt is sent to the LLM. The LLM uses both its training knowledge and the provided context to generate an accurate and relevant answer.
+
+What is the difference between RAG and fine-tuning?
+
+RAG and fine-tuning are both methods to customize LLMs but they are different.
+
+RAG is like giving a model an open-book exam. It retrieves external information to answer. Fine-tuning is like making the student study and memorize the material before the exam. It retrains the model on specific data.
+
+RAG keeps AI up-to-date without retraining. It is very useful for private data.
+
+Conventional or keyword search solutions in RAG produce limited results for knowledge-intensive tasks. Developers may need to use semantic search which understands the meaning of the query.
+
+How can AWS support your Retrieval-Augmented Generation requirements?
+
+Amazon Bedrock is a fully-managed service that offers a choice of high-performing foundation models-along with a broad set of capabilities to build generative AI applications with security, privacy, and responsible AI.
+
+For organizations managing their own RAG, Amazon Kendra is a highly-accurate enterprise search service powered by machine learning. It can retrieve up to 100 semantically-relevant passages of up to 200 token words each, ordered by relevance.
+
+Use pre-built connectors to popular data technologies like Amazon Simple Storage Service, SharePoint, Confluence, or other data sources.
+
+Support a wide range of document formats such as HTML, Word, PowerPoint, PDF, Excel, and text files.
+
+Filter responses based on those documents that the end-user permissions allow.
+
+Amazon also offers options for organizations who want to build more custom generative AI solutions. Amazon SageMaker JumpStart is a ML hub with FMs, built-in algorithms, and prebuilt ML solutions that you can deploy with just a few clicks. You can speed up RAG implementation by referring to existing SageMaker notebooks and code examples.
+
+Amazon SageMaker allows you to build, train, and deploy ML models.
+
+Get started with Retrieval-Augmented Generation on AWS by creating a free account today.
